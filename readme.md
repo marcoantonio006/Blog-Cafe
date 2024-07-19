@@ -1,4 +1,4 @@
-Descarga las dependencias necesarias con:
+Descarga las dependencias necesarias para trabajar con:
 
 ```nodejs
 npm install
