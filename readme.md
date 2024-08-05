@@ -2,7 +2,7 @@ Aqui voy a alojar temporalmente paginas web con las que practico, algunas con de
 
 # Si el proyecto tiene dependencias:
 
-Descarga las dependencias necesarias para trabajar con:
+Descarga las dependencias de desarrollador con:
 
 ```nodejs
 npm install
