@@ -2,224 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock & EDM Festival</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>BlogDeCafé</title>
+    <meta name="description" content="Página web de blog de café">
 
-    <link rel="stylesheet" href="build/css/app.css">
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
     <header class="header">
-        <div class="contenedor contenido-header">
-            <h1>Rock & EDM Festival</h1>
-            <nav class="navegacion-principal">
-                <a href="#lineup">Line Up</a>
-                <a href="#boletos">Boletos</a>
-            </nav>
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
         </div>
     </header>
 
-    <div class="video">
-        <div class="overlay">
-            <div class="contenedor contenido-video">
-                <h2>Rock & EDM Festival</h1>
-                <p>Diciembre 2023, Maracaibo, Zulia.</p>
-            </div>
-        </div>
-        <video autoplay muted loop>
-            <source src="video/concierto.mp4" type="video/mp4">
-            <source src="video/concierto.ogg" type="video/ogg">
-            <source src="video/concierto.webm" type="video/webm">
-        </video>        
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de Grano de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas de Extracción de Café</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo: 
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información sobre nuestros cursos</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo: 
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información sobre nuestros cursos</a>
+                </li>
+            </ul>
+        </aside>
     </div>
 
-    <section class="contenedor sobre-festival">
-        <div class="imagen">
-            <picture>
-                <source srcset="build/img/imagen_vocalista.webp" type="img/webp">
-                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.webp" alt="imagen de vocalista">
-            </picture>
-        </div>
-        <div class="contenido-festival">
-            <h2>Rock & EDM Festival</h2>
-            <p class="fecha">Diciembre 2023</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit doloribus ullam? Consequuntur at cum exercitationem ipsum quidem nostrum, quis adipisci magni nesciunt laboriosam, corporis rerum iusto quod, commodi ea!</p>
-        </div>
-    </section>
-
-    <section id="lineup" class="lineup">
-        <h3>Line Up</h3>
-
-        <p class="dia">Diciembre 17</p>
-
-        <div class="escenarios-contenedor contenedor">
-            <div class="escenario rock bg-amarillo">
-                <p class="nombre-escenario">Escenario Rock</p>
-
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>Metallica</span>
-                    </li>
-                    <li>
-                        22:00 | <span>Pearl Jam</span>
-                    </li>
-                    <li>
-                        20:00 | <span>KoRn</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Muse</span>
-                    </li>
-                    <li>
-                        18:00 | <span>Breaking Benjamin</span>
-                    </li>
-                    <li>
-                        17:00 | <span>30 Seconds to Mars</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
-            <div class="escenario edm bg-verde">
-                <p class="nombre-escenario">Escenario EDM</p>
-
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>Deadmau5</span>
-                    </li>
-                    <li>
-                        22:00 | <span>Tïesto</span>
-                    </li>
-                    <li>
-                        20:00 | <span>Hardwell</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Dash Berlin</span>
-                    </li>
-                    
-                    <li>
-                        18:00 | <span>Fedde Legrand</span>
-                    </li>
-                    <li>
-                        17:00 | <span>Audien</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
-        </div> <!--.escenario contenedor-->
-
-        <p class="dia">Diciembre 18</p>
-
-        <div class="escenarios-contenedor contenedor">
-            <div class="escenario rock bg-verde">
-                <p class="nombre-escenario">Escenario Rock</p>
-
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>Red Hot Chili Peppers</span>
-                    </li>
-                    <li>
-                        22:00 | <span>The Killers</span>
-                    </li>
-                    <li>
-                        20:00 | <span>Deftones</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Limp Bizkit</span>
-                    </li>
-                    
-                    <li>
-                        18:00 | <span>Papa Roach</span>
-                    </li>
-                    <li>
-                        17:00 | <span>Lamb of God</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
-            <div class="escenario edm bg-amarillo">
-                <p class="nombre-escenario">Escenario EDM</p>
-
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>Paul Van Dyk</span>
-                    </li>
-                    <li>
-                        22:00 | <span>Armin Van Buuren</span>
-                    </li>
-                    <li>
-                        20:00 | <span>Above & Beyond</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Eric Prdyz</span>
-                    </li>
-                    
-                    <li>
-                        18:00 | <span>Ferry Corsten</span>
-                    </li>
-                    <li>
-                        17:00 | <span>Vini Vici</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
-        </div> <!--.escenario contenedor-->
-    </section>
-
-    <section id="boletos" class="boletos bg-verde">
-        <h3>Boletos</h3>
-
-        <div class="contenedor contenedor-boletos">
-
-            <div class="basico pase">
-                <p class="nombre-pase">Pase 1 Día</p>
-                <header class="pase-header">
-                    <p>Incluye</p>
-                </header>
-                <div class="pase-body">
-                    <ul>
-                        <li>
-                            acceso a ambos escenarios
-                        </li>
-                        <li>
-                            Comida y bebida
-                        </li>
-                    </ul>
-                </div>
-                <footer class="pase-footer">
-                    <p>100$</p>
-                </footer>
-            </div>
-
-            <div class="premium pase">
-                <p class="nombre-pase">Pase 2 Días</p>
-                <header class="pase-header">
-                    <p>Incluye</p>
-                </header>
-                    <div class="pase-body">
-                        <ul>
-                            <li>
-                                acceso a ambos escenarios
-                            </li>
-                            <li>
-                                Comida y bebida
-                            </li>
-                            <li>
-                                Camisa del evento
-                            </li>
-                            <li>Acceso VIP</li>
-                        </ul>
-                    </div>
-                <footer class="pase-footer">
-                    <p>180$</p>
-                </footer>
-            </div>
-
-        </div>
-    </section>
-
     <footer class="footer">
-        <p>Rock & EDM Festival. Todos los derechos reservados.</p>
-    </footer>
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
 
-    <script src="build/js/app.js"></script>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/modernizr.js"></script>
 </body>
-</html> 
+</html>
