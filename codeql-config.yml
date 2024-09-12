@@ -1,0 +1,16 @@
+name: "Configuración CodeQL Personalizada"
+
+disable-default-queries: false
+
+queries:
+  - uses: security-and-quality
+
+packs:
+  - codeql/javascript-queries:codeql-suites/javascript-security-extended.qls
+
+paths-ignore:
+  - 'node_modules'
+  - '**/*.test.js'
+  - '**/bootstrap.js'
+  - '**/bootstrap.min.js'
+  - '**/jquery-*.js'
